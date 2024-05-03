@@ -1,0 +1,2 @@
+"Id";"AccountId";"AccountName";"AccountType";"Date";"Description";"OriginalDescription";"MainCategoryId";"MainCategoryName";"CategoryId";"CategoryName";"CategoryType";"ExpenseType";"Amount";"Balance";"CounterEntryId";"Comment";"Tags";"Extraordinary";"SplitGroupId";"CustomDate";"Currency";"OriginalAmount";"OriginalCurrency"
+"12234";"123442";"Konto 360°";"Consumption";"02-04-2024";"piwo";"piwo";"";"";"";"";"Expense";"Variable";"-5,00";"11612,26";"";;"";"No";"";;"PLN";"-5,00";"PLN"

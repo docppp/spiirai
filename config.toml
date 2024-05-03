@@ -1,0 +1,9 @@
+[model]
+words_limit = 999
+layer1_size = 512
+layer2_size = 256
+layer3_size = 128
+
+[training]
+epochs = 100
+batch_size = 16
