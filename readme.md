@@ -38,8 +38,20 @@ therefore I am unable to create proper map CategoryName <-> CategoryId.
 ### Data preprocessing
 Data class is designed to handle data preprocessing for training an AI model used for categorizing expenses in a home budget. 
 It involves several steps of data cleaning, transformation, and encoding to prepare the data for fitting into a Keras model.
+
 It finds 999 (configurable) most common words in all descriptions and encodes them into one vector of 1s and 0s.
 Additional value is inserted in this vector that represent how many uncommon words are in description.
+
+In addition to the categorical data in the "Description", there are numerical features such as "Amount" and "Date" for better expense categorization.
+
+The "Amount" column represents the monetary value of each expense.
+During preprocessing, the amount is split into integer and decimal parts to capture the whole and fractional components accurately.
+The integer part is scaled using standard scaling to bring all numerical features to a similar scale, enhancing model performance.
+The processed "Amount" is then included as input alongside other features for training the model.
+
+The "Date" column indicates the date when each expense occurred.
+To extract meaningful features from dates, the day of year, day of month, and day of week are derived.
+These features provide temporal context to the expenses and help the model learn patterns related to spending behavior over different time periods.
 
 ### Ai Engine
 Uses Keras neural network model. It utilizes the Data class for preprocessing the training data and incoming data for predictions.
